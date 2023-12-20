@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bethel Tanatswa.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/82f1d2ab32.js" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div id="header">
+        <div class="container">  
+            <nav>
+                <img src="olaimages/Logo-removebg-preview (1).png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Java Developer</p>
+                <h1>Hi, I'm <span>Bethel-Tanah</span><br> and I love tech.</h1>
+            </div>
+        </div>
+
+    </div>
+<!------------------about------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="olaimages/chair.png" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an innovative and tech-savvy Full Stack Java developer with 3+ years of experience in web application development, proficient in
+                        utilising a number of technologies. I demonstrate adaptability and agility in quickly
+                        adapting to new technologies and project requirements. Demonstrable success in delivering high-quality code and
+                        timely project deliverables in a competitive environment.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experince</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Full Stack Web Developer.</span><br>Designing both the front and backend of web applications</li>
+                                <li><span>Java Developer.</span><br>Developing softwares using Java as the main language</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>October 2023 - Present</span><br>Full Stack Web Developer at Bharat Intern</li>
+                                <li><span>1 September 2023 - 30 September 2023</span><br>Java Developer at DryCode</li>
+                                <li><span>November 2021 - December 2022</span><br>Junior Java Developer at Clevasoft</li>
+                                <li><span>August 2020 - October 2021</span><br>IT Assistant at Lilovat Technology</li>  
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Oracle Certified Associate (OCA) Java SE 8,</span><br>Pine Valley Institute, under Oracle University</li>
+                            </ul>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!----------------------------services----------------->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Software Developing</h2>
+                <p>I make backend softwares using mostly Java. 
+                    These softwares can be used both for website and application development. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Designing</h2>
+                <p>I make backend softwares using mostly Java. 
+                    These softwares can be used both for website and application development. </p>
+                <a href="#">Learn more</a> 
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Designing</h2>
+                <p>I make backend softwares using mostly Java. 
+                    These softwares can be used both for website and application development. </p>
+                <a href="#">Learn more</a> 
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------------portfolio--------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app allows to check the whether of any country in the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app allows to check the whether of any country in the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app allows to check the whether of any country in the world.
+                        Download it from play store.
+                    </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+
+    }
+
+</script>
+    
+</body>
+ 
